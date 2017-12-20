@@ -21,10 +21,6 @@ class AlbumsList extends React.Component {
     }, 400);
   }
 
-  onSort () {
-    // TODO: implement
-  }
-
   render() {
     const albums = this.state.data.map(album => {
       return (

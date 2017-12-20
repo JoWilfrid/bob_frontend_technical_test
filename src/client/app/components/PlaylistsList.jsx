@@ -81,7 +81,7 @@ class PlaylistsList extends React.Component {
       if (playlist.size === 0) {
         iconTd = (
           <td>
-            <img src="public/icon-empty.svg" alt="Empty" height="15" width="15" />
+            <img src="public/assets/images/icon-empty.svg" alt="Empty" height="20" width="20" />
           </td>
         );
       } else {
@@ -103,7 +103,7 @@ class PlaylistsList extends React.Component {
           <tr>
             <th></th>
             <th>Titre</th>
-            <th onClick={this.onSort}>Taille</th>
+            <th onClick={this.onSort} className="sort">Taille</th>
           </tr>
         </thead>
         <tbody>{playlists}</tbody>
